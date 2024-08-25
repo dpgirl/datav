@@ -54,7 +54,13 @@ module.exports = {
     commonjs(),
     babel({
       exclude: 'node_modules/**',
-      babelHelpers: 'bundled'
+      babelHelpers: 'bundled',
+      plugins: [
+        // ['@babel/plugin-transform-runtime', {
+        //   "regenerator": true,
+        //   "helpers": true
+        // }]
+      ]
     }),
     json(),
     postcss({

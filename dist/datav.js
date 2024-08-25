@@ -4,7 +4,7 @@
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.datav = factory(global.vue));
 })(this, (function (vue) { 'use strict';
 
-  var script$3 = {
+  var script$4 = {
     name: "CustomSvg",
   };
 
@@ -18,18 +18,18 @@
     ], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */))
   }
 
-  script$3.render = render;
-  script$3.__file = "src/components/CustomSvg/Svg.vue";
+  script$4.render = render;
+  script$4.__file = "src/components/CustomSvg/Svg.vue";
 
   function CustomSvg (Vue) {
-    Vue.component(script$3.name, script$3);
+    Vue.component(script$4.name, script$4);
   }
 
   const _hoisted_1$2 = { class: "icon-svg" };
   const _hoisted_2$2 = ["href"];
 
 
-  var script$2 = /*#__PURE__*/Object.assign({ name: "Icon" }, {
+  var script$3 = /*#__PURE__*/Object.assign({ name: "Icon" }, {
     __name: 'Icon',
     props: {
     name: String,
@@ -88,14 +88,14 @@
     }
   }
 
-  var css_248z$2 = ".icon-wrapper[data-v-38d2d0ef] {\n  display: inline-block;\n}\n\n.icon-svg[data-v-38d2d0ef] {\n  width: 100%;\n  height: 100%;\n  vertical-align: -0.15em;\n  fill: currentColor;\n  overflow: hidden;\n}";
-  styleInject(css_248z$2);
+  var css_248z$3 = ".icon-wrapper[data-v-38d2d0ef] {\n  display: inline-block;\n}\n\n.icon-svg[data-v-38d2d0ef] {\n  width: 100%;\n  height: 100%;\n  vertical-align: -0.15em;\n  fill: currentColor;\n  overflow: hidden;\n}";
+  styleInject(css_248z$3);
 
-  script$2.__scopeId = "data-v-38d2d0ef";
-  script$2.__file = "src/components/Icon/Icon.vue";
+  script$3.__scopeId = "data-v-38d2d0ef";
+  script$3.__file = "src/components/Icon/Icon.vue";
 
   function Icon (Vue) {
-    Vue.component(script$2.name, script$2);
+    Vue.component(script$3.name, script$3);
   }
 
   const _hoisted_1$1 = { class: "loading-wrapper" };
@@ -108,7 +108,7 @@
   const _hoisted_8$1 = ["values", "dur"];
   const _hoisted_9$1 = { class: "loading-tip" };
 
-  var script$1 = /*#__PURE__*/Object.assign({ name: "Loading" }, {
+  var script$2 = /*#__PURE__*/Object.assign({ name: "Loading" }, {
     __name: 'Loading',
     props: {
     width: {
@@ -214,14 +214,14 @@
 
   });
 
-  var css_248z$1 = ".loading-wrapper[data-v-416d18c9] {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.loading-wrapper[data-v-416d18c9] .loading-tip[data-v-416d18c9] {\n  font-size: 15px;\n}";
-  styleInject(css_248z$1);
+  var css_248z$2 = ".loading-wrapper[data-v-416d18c9] {\n  width: 100%;\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n.loading-wrapper[data-v-416d18c9] .loading-tip[data-v-416d18c9] {\n  font-size: 15px;\n}";
+  styleInject(css_248z$2);
 
-  script$1.__scopeId = "data-v-416d18c9";
-  script$1.__file = "src/components/Loading/Loading.vue";
+  script$2.__scopeId = "data-v-416d18c9";
+  script$2.__file = "src/components/Loading/Loading.vue";
 
   function Loading (Vue) {
-    Vue.component(script$1.name, script$1);
+    Vue.component(script$2.name, script$2);
   }
 
   /**
@@ -299,9 +299,9 @@
   const _hoisted_8 = ["href", "stroke"];
   const _hoisted_9 = ["href", "stroke", "mask"];
   const _hoisted_10 = { class: "fly-box-content" };
-  const refName = "flyBox";
+  const refName$1 = "flyBox";
 
-  var script = /*#__PURE__*/Object.assign({ name: "FlyBox" }, {
+  var script$1 = /*#__PURE__*/Object.assign({ name: "FlyBox" }, {
     __name: 'FlyBox',
     props: {
     lineColor: {
@@ -328,9 +328,9 @@
 
   const uuid = v4();
   console.log("uuid", uuid);
-  const pathId = `${refName}-path-${uuid}`;
-  const radialGradientId = `${refName}-gradient-${uuid}`;
-  const maskId = `${refName}-mask-${uuid}`;
+  const pathId = `${refName$1}-path-${uuid}`;
+  const radialGradientId = `${refName$1}-gradient-${uuid}`;
+  const maskId = `${refName$1}-mask-${uuid}`;
   const width = vue.ref(0);
   const height = vue.ref(0);
   // M5 5 L395 5 L395 395 L5 395 Z
@@ -343,7 +343,7 @@
 
   const init = () => {
     const instance = vue.getCurrentInstance();
-    const dom = instance.ctx.$refs[refName];
+    const dom = instance.ctx.$refs[refName$1];
     width.value = dom.clientWidth;
     height.value = dom.clientHeight;
   };
@@ -354,7 +354,7 @@
   return (_ctx, _cache) => {
     return (vue.openBlock(), vue.createElementBlock("div", {
       class: "fly-box",
-      ref: refName
+      ref: refName$1
     }, [
       (vue.openBlock(), vue.createElementBlock("svg", {
         width: width.value,
@@ -416,13 +416,158 @@
 
   });
 
-  var css_248z = ".fly-box[data-v-513cc2e2] {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.fly-box[data-v-513cc2e2] svg[data-v-513cc2e2] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.fly-box[data-v-513cc2e2] .fly-box-content[data-v-513cc2e2] {\n  width: 100%;\n  height: 100%;\n  padding: 10px;\n  box-sizing: border-box;\n}";
-  styleInject(css_248z);
+  var css_248z$1 = ".fly-box[data-v-513cc2e2] {\n  position: relative;\n  width: 100%;\n  height: 100%;\n}\n.fly-box[data-v-513cc2e2] svg[data-v-513cc2e2] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n}\n.fly-box[data-v-513cc2e2] .fly-box-content[data-v-513cc2e2] {\n  width: 100%;\n  height: 100%;\n  padding: 10px;\n  box-sizing: border-box;\n}";
+  styleInject(css_248z$1);
 
-  script.__scopeId = "data-v-513cc2e2";
-  script.__file = "src/components/FlyBox/FlyBox.vue";
+  script$1.__scopeId = "data-v-513cc2e2";
+  script$1.__file = "src/components/FlyBox/FlyBox.vue";
 
   function FlyBox (Vue) {
+    Vue.component(script$1.name, script$1);
+  }
+
+  const refName = "datavContainer";
+
+  var script = /*#__PURE__*/Object.assign({ name: "datavContainer" }, {
+    __name: 'Container',
+    props: {
+    options: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
+    setup(__props) {
+
+
+  // import * as vm from "vue"; // 打印vue, 查看有哪些方法
+  const props = __props;
+  const width = vue.ref(0);
+  const height = vue.ref(0);
+  // 视口宽高
+  const originalWidth = vue.ref(0);
+  const originalHeight = vue.ref(0);
+  const ready = vue.ref(false);
+
+  let context, dom, observer;
+
+  // 初始化
+  const initSize = () => {
+    return new Promise((resolve) => {
+      // 避免初始化时，dom还没渲染加载好；加nextTick会有异步问题，所以用Promise改成同步
+      vue.nextTick(() => {
+        dom = context.$refs[refName];
+        console.log("initSize", dom);
+        // 用户传入宽高，则用用户定义的；否则用dom的宽高【获取大屏真实尺寸】
+        if (props.options && props.options.width && props.options.height) {
+          width.value = props.options.width;
+          height.value = props.options.height;
+        } else {
+          width.value = dom.clientWidth;
+          height.value = dom.clientHeight;
+        }
+
+        // 视口宽高【获取画布尺寸】
+        if (!originalWidth.value || !originalHeight.value) {
+          // window.screen.width用户屏幕的总宽度，值是固定的，不会随着浏览器窗口大小变化；反映的是整个屏幕的分辨率
+          originalWidth.value = window.screen.width;
+          originalHeight.value = window.screen.height;
+        }
+        resolve();
+      });
+    });
+  };
+
+  // 更新容器的size
+  const updateSize = () => {
+    if (width.value && height.value) {
+      dom.style.width = `${width.value}px`;
+      dom.style.height = `${height.value}px`;
+    } else {
+      dom.style.width = `${originalWidth.value}px`;
+      dom.style.height = `${originalHeight.value}px`;
+    }
+  };
+
+  const updateScale = () => {
+    // 获取真实的视口尺寸【html，body和#app必须初始化为全屏，才能随着浏览器窗口变化而变化】
+    const currentWidth = document.body.clientWidth;
+    const currentHeight = document.body.clientHeight;
+    // 获取大屏最终的宽高
+    const realWidth = width.value || originalWidth.value;
+    const realHeight = height.value || originalHeight.value;
+    // 缩放比例
+    const widthScale = currentWidth / realWidth;
+    const heightScale = currentHeight / realHeight;
+    dom.style.transform = `scale(${widthScale}, ${heightScale})`;
+  };
+
+  /**
+   * 突破chrome 12px字体的显示极限：用到scale让字体可以缩放到小于12px;
+   * 浏览器缩放时锁定屏幕宽高比： 缩放时，字体要保持不变，不能随着一起放大缩小；
+   */
+  const onResize = async (e) => {
+    console.log("onResize", e);
+    await initSize();
+    updateScale();
+  };
+
+  /** 监听dom变化: 更新resize */
+  const initMutationObserver = () => {
+    const MutationObserver = window.MutationObserver;
+    observer = new MutationObserver(onResize);
+    observer.observe(dom, {
+      attributes: true,
+      attributeFilter: ["style"],
+      attributeOldValue: true,
+    });
+  };
+
+  const removeMutationObserver = () => {
+    if (observer) {
+      observer.disconnect();
+      observer.taskRecords();
+      observer = null;
+    }
+  };
+
+  vue.onMounted(async () => {
+    ready.value = false;
+    context = vue.getCurrentInstance().ctx;
+    await initSize();
+    updateSize();
+    updateScale();
+
+    window.addEventListener("resize", onResize);
+    initMutationObserver();
+    ready.value = true;
+  });
+
+  // 组件销毁
+  vue.onUnmounted(() => {
+    window.removeEventListener("resize", onResize);
+    removeMutationObserver();
+  });
+
+  return (_ctx, _cache) => {
+    return (vue.openBlock(), vue.createElementBlock("div", {
+      id: "datav-container",
+      ref: refName
+    }, [
+      (ready.value)
+        ? vue.renderSlot(_ctx.$slots, "default", { key: 0 })
+        : vue.createCommentVNode("v-if", true)
+    ]))
+  }
+  }
+
+  });
+
+  var css_248z = "@charset \"UTF-8\";\n/** 容器组件：一般只有1个 */\n#datav-container {\n  /** 容器锁定宽高比：让容器原点是在左上方 */\n  position: fixed;\n  top: 0;\n  left: 0;\n  overflow: hidden;\n  z-index: 999;\n  transform-origin: left top;\n}";
+  styleInject(css_248z);
+
+  script.__file = "src/components/Container/Container.vue";
+
+  function Container (Vue) {
     Vue.component(script.name, script);
   }
 
@@ -431,6 +576,7 @@
     Vue.use(Icon);
     Vue.use(Loading);
     Vue.use(FlyBox);
+    Vue.use(Container);
   }
 
   return index;
